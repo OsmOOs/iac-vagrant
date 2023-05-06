@@ -11,7 +11,6 @@
       - { name: bat, version: 0.23.0 }
       - { name: direnv, version: 2.32.2 }
       - { name: exa, version: 0.10.1 }
-      - { name: docker-compose, version: v3.8.0 }
       - { name: helm, version: 3.11.1 }
       - { name: kubectl, version: 1.27.0 }
       - { name: glab, version: 1.29.0 }
