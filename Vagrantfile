@@ -7,7 +7,7 @@ $script_name = "scripts/%s.sh" % $distrib
 Vagrant.configure("2") do |config|
     config.vm.box = "generic/%s" % $distrib
     config.vm.define 'devbox' do |node|
-        node.vm.hostname = 'devbox'
+        node.vm.hostname = 'devbox.home.local'
     end
     config.vm.provider "hyperv" do |hyperv|
         hyperv.vmname = "devbox"
