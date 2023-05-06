@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
-echo "Enter USER GITHUB"
-read GITHUB_USER
-echo "Enter TOKEN GITHUB"
-read GITHUB_TOKEN
+echo "Enter USER GITHUB: "
+read -p GITHUB_USER
+echo "Enter TOKEN GITHUB: "
+read -p GITHUB_TOKEN
 pip install ansible --user
 git config --global user.email "nicos2792@gmail.com"
 git config --global user.name "OsmOOs"
