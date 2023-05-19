@@ -183,7 +183,7 @@
         - tldr
     - name: Install pip packages
       ansible.builtin.pip:
-        requirements: "/home/{{ user }}/my-vagrant-box/requirements.txt"
+        requirements: "/home/{{ user }}/iac-vagrant/requirements.txt"
       become: false
       tags: pip
     - name: Install vagrant plugin libvirt
