@@ -1,5 +1,5 @@
 ---
-- name: Install Devopsbox
+- name: Install Devopstools
   hosts: localhost
   connection: local
   gather_facts: true
@@ -7,7 +7,7 @@
   vars:
     user: vagrant
     devops_tools:
-      - { name: awscli, version: 2.11.18 }
+      - { name: awscli, version: 2.11.20 }
       - { name: bat, version: 0.23.0 }
       - { name: direnv, version: 2.32.2 }
       - { name: exa, version: 0.10.1 }
@@ -140,7 +140,7 @@
       ansible.builtin.git:
         repo: 'https://github.com/asdf-vm/asdf.git'
         dest: "/home/{{ user }}/.asdf"
-        version: v0.10.2
+        version: v0.11.3
       tags: asdf
       become: false
     - name: Add asdf to .zshrc

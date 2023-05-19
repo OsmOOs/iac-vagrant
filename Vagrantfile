@@ -1,16 +1,16 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-$distrib = ENV['DISTRIB'] || 'fedora36'
+$distrib = ENV['DISTRIB'] || 'ubuntu2204'
 $script_name = "scripts/%s.sh" % $distrib
 
 Vagrant.configure("2") do |config|
     config.vm.box = "generic/%s" % $distrib
-    config.vm.define 'devbox' do |node|
-        node.vm.hostname = 'devbox.home.local'
+    config.vm.define 'devtools' do |node|
+        node.vm.hostname = 'devtools.home.local'
     end
     config.vm.provider "hyperv" do |hyperv|
-        hyperv.vmname = "devbox"
+        hyperv.vmname = "devtools"
         hyperv.cpus = 6
         hyperv.memory = 4096
         hyperv.maxmemory = 8192

@@ -1,4 +1,4 @@
-# IAC DevOps Tools COnfigurations
+# IAC DevOps Tools Configurations
 
 Ce projet permet d'installer des outils DevoOps:
 - Création d'un instance Linux sur Hyper-V sous Windows (Ubuntu, Fedora)
@@ -18,3 +18,6 @@ Liste non exhaustive des principaux outils installés:
 On retrouve également d'autres outils:
 - k9s, kubens, kubectx, stern ...
 - les cli des clouders: AWS, GCP, Azure
+
+
+source fork: https://blog.stephane-robert.info/
